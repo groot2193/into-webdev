@@ -1,0 +1,54 @@
+<html>
+
+<body>
+
+<h3 id="timer">30 seconds remaining</h3>
+
+<table>
+<tr>
+<td><p id="num1"></p></td>
+<td><p id="index"></p></td>
+<td><p id="num2"></p></td></tr>
+<script>
+my_arr = ["+","-","*","/","%"];
+
+//document.getElementById("opp").innerHTML=my_arr[index];
+document.getElementById("num1").innerHTML=Math.floor(Math.random()*10);
+document.getElementById("index").innerHTML=Math.floor(Math.random()*5);
+document.getElementById("num2").innerHTML=Math.floor(Math.random()*10);
+
+</script>
+
+ <script>
+     var count = 0;
+     var limit = 30;
+
+     const interval = setInterval(timer_30,1000);  //calls function after every 1 second
+
+     function timer_30(){
+      count = count+1;
+
+      document.getElementById("timer").innerHTML = ( limit - count ) + " seconds remaining";
+      
+
+      if(count == 30){ 
+        document.getElementById("timer").innerHTML = "game over"; 
+        
+        clearInterval(interval); //this will stop setInterval() function from calling again
+      }
+  
+     }
+     
+  </script>
+</body>
+</html>
+
+
+*/<html>
+<body>
+<p id="opp"></p
+<script>
+
+my_arr = ["+","-","*","/","%"];
+document.getElementById("index").innerHTML=Math.floor(Math.random()*5);
+document.getElementById("opp").innerHTML=my_arr[index];</script>

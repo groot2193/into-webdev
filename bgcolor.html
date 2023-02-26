@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script>
+function bgChange(bg) {
+  document.body.style.background = bg;
+}
+</script>
+</head>
+<body>
+
+
+
+<table style="width:300px;height:100px">
+  <tr>
+    <td onmouseover="bgChange(this.style.backgroundColor)" 
+    onmouseout="bgChange('red')"
+    style="background-color:yellow">
+    </td>
+    <td onmouseover="bgChange(this.style.backgroundColor)" 
+    onmouseout="bgChange('blue')"
+    style="background-color:PaleGreen">
+    </td>
+    <td onmouseover="bgChange(this.style.backgroundColor)" 
+    onmouseout="bgChange('black')"
+    style="background-color:lavender">
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
